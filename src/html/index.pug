@@ -1,0 +1,142 @@
+doctype html
+html(lang="ru")
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport" content="width=device-width")
+		title Анкета
+		link(rel="stylesheet" href="libs/jquery-ui/themes/base/jquery-ui.css")
+		link(rel="stylesheet" href="css/main.css")
+
+	body
+
+		header
+
+			.menu.width_515
+
+				.toggle-wrap
+					.toggle-button
+						span.sandwich
+							span.sw-topper 
+							span.sw-bottom 
+							span.sw-footer 
+				nav
+					a.to-info(href="#").nav_active Личная информация
+					a.to-exper(href="#") Опыт  
+					a.to-javasc(href="#") JavaScript  
+					a.to-about(href="#") О себе
+		
+		section
+
+			h1 Анкета
+
+			form.form
+
+				.form__block.width_515.b-info
+					.form__block-icon
+						img(src="images/icon1.png" alt="")
+					h2 Личная информация
+
+					input(type="text" placeholder="ФИО")
+					select
+						option( value="") Год рождения
+						option( value="") 1985
+						option( value="") 1986
+						option( value="") 1987
+						option( value="") 1988
+						option( value="") 1989
+						option( value="") 1990
+						option( value="") 1991
+						option( value="") 1992
+					input(type="text" placeholder="Место проживания")
+					input(type="text" placeholder="Skype")
+					input(type="text" placeholder="E-mail")
+
+				.form__block.width_770.b-exper
+					.form__block-icon
+						img(src="images/icon2.png" alt="")
+					h2 Расскажите о своем опыте
+					
+					.chechbox-wrap
+
+						label
+							input(type="checkbox")
+							| БЭМ/OOCSS
+
+						label
+							input(type="checkbox")
+							| Верстаю семантично
+
+						label
+							input(type="checkbox")
+							| Webpack
+
+						label
+							input(type="checkbox")
+							| Stylus/LESS/SASS
+
+						label
+							input(type="checkbox")
+							| ES2015/ES2016
+
+						label
+							input(type="checkbox")
+							| jQuery
+
+						label
+							input(type="checkbox")
+							| Работаю с SVG
+
+						label
+							input(type="checkbox")
+							| Gulp/GRUNT
+
+						label
+							input(type="checkbox")
+							| Ипользую Git
+
+
+				.form__block.width_770.b-javasc
+					.form__block-icon
+						img(src="images/icon3.png" alt="")
+					h2 Уровень владения JavaScript
+				
+					
+					.slider-before
+						label.slider-before-item
+							input(type="checkbox")
+							|Не владею
+
+						label.slider-before-item
+							input(type="checkbox")
+							|Использую готовые
+							|<br>
+							| решения				
+
+						label.slider-before-item
+							input(type="checkbox")
+							| Использую готовые решения и умею и переделывать
+
+						label.slider-before-item
+							input(type="checkbox")
+							| Пишу сложный JS с нуля
+					#slider
+						a(href='#' class='ui-slider-handle')
+
+				.form__block.width_515.b-about
+					.form__block-icon
+						img(src="images/icon4.png" alt="")
+					h2 Расскажите о себе
+
+					.h2_descr Напишите несколько предложений, чем привлекла наша вакансия и что вы ожидаете от работы у нас.
+
+					textarea(rows="5" placeholder="Понравилась тем, что...")
+					
+					.form__submit
+						input(type="submit" value="Готово")
+
+
+
+
+		script(type="text/javascript" src="libs/jquery/dist/jquery.min.js")
+		script(type="text/javascript" src="libs/jquery-ui/jquery-ui.min.js")
+		script(type="text/javascript" src="js/custom.js")

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Анкета</title>
+    <link rel="stylesheet" href="libs/jquery-ui/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+    <header>
+      <div class="menu width_515">
+        <div class="toggle-wrap">
+          <div class="toggle-button"><span class="sandwich"><span class="sw-topper"> </span><span class="sw-bottom"> </span><span class="sw-footer"> </span></span></div>
+        </div>
+        <nav><a class="to-info nav_active" href="#">Личная информация</a><a class="to-exper" href="#">Опыт  </a><a class="to-javasc" href="#">JavaScript  </a><a class="to-about" href="#">О себе</a></nav>
+      </div>
+    </header>
+    <section>
+      <h1>Анкета</h1>
+      <form class="form">
+        <div class="form__block width_515 b-info">
+          <div class="form__block-icon"><img src="images/icon1.png" alt=""></div>
+          <h2>Личная информация</h2>
+          <input type="text" placeholder="ФИО">
+          <select>
+            <option value="">Год рождения</option>
+            <option value="">1985</option>
+            <option value="">1986</option>
+            <option value="">1987</option>
+            <option value="">1988</option>
+            <option value="">1989</option>
+            <option value="">1990</option>
+            <option value="">1991</option>
+            <option value="">1992</option>
+          </select>
+          <input type="text" placeholder="Место проживания">
+          <input type="text" placeholder="Skype">
+          <input type="text" placeholder="E-mail">
+        </div>
+        <div class="form__block width_770 b-exper">
+          <div class="form__block-icon"><img src="images/icon2.png" alt=""></div>
+          <h2>Расскажите о своем опыте</h2>
+          <div class="chechbox-wrap">
+            <label>
+              <input type="checkbox">БЭМ/OOCSS
+            </label>
+            <label>
+              <input type="checkbox">Верстаю семантично
+            </label>
+            <label>
+              <input type="checkbox">Webpack
+            </label>
+            <label>
+              <input type="checkbox">Stylus/LESS/SASS
+            </label>
+            <label>
+              <input type="checkbox">ES2015/ES2016
+            </label>
+            <label>
+              <input type="checkbox">jQuery
+            </label>
+            <label>
+              <input type="checkbox">Работаю с SVG
+            </label>
+            <label>
+              <input type="checkbox">Gulp/GRUNT
+            </label>
+            <label>
+              <input type="checkbox">Ипользую Git
+            </label>
+          </div>
+        </div>
+        <div class="form__block width_770 b-javasc">
+          <div class="form__block-icon"><img src="images/icon3.png" alt=""></div>
+          <h2>Уровень владения JavaScript</h2>
+          <div class="slider-before">
+            <label class="slider-before-item">
+              <input type="checkbox">Не владею
+            </label>
+            <label class="slider-before-item">
+              <input type="checkbox">
+              Использую готовые
+              <br>
+              решения				
+            </label>
+            <label class="slider-before-item">
+              <input type="checkbox">Использую готовые решения и умею и переделывать
+            </label>
+            <label class="slider-before-item">
+              <input type="checkbox">Пишу сложный JS с нуля
+            </label>
+          </div>
+          <div id="slider"><a class="ui-slider-handle" href="#"></a></div>
+        </div>
+        <div class="form__block width_515 b-about">
+          <div class="form__block-icon"><img src="images/icon4.png" alt=""></div>
+          <h2>Расскажите о себе</h2>
+          <div class="h2_descr">Напишите несколько предложений, чем привлекла наша вакансия и что вы ожидаете от работы у нас.</div>
+          <textarea rows="5" placeholder="Понравилась тем, что..."></textarea>
+          <div class="form__submit">
+            <input type="submit" value="Готово">
+          </div>
+        </div>
+      </form>
+    </section>
+    <script type="text/javascript" src="libs/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="libs/jquery-ui/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="js/custom.js"></script>
+  </body>
+</html>
